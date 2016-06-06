@@ -1,0 +1,15 @@
+- What happens when you initialize a repository? Why do you need to do it?
+
+	When I intilize a repository, by using the (git init), it creats a repository in hidden file format which can be checked by the command (ls -a).
+	In that hidden file named .git it stores the snapshot of all the histories (commits) made in the project.
+
+	I can check the commits made earlier by using the command git log. And to check the untracked files and history made by using the command (git 		status).
+
+- Why do I need to do it?
+
+	because without it I will not be able to make repository of the project and upload it to the Github.
+
+- How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+	
+	Staging area lies in the middle of the working directory and the repository. It lets the user add the one logical change at a time in the 		repository. You can add files in the staging area just by using the command (git add filename.txt). Status of the staging area can checked just 	by using the command (git status).
