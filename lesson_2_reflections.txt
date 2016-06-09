@@ -2,7 +2,6 @@
 
 	When I intilize a repository, by using the (git init), it creats a repository in hidden file format which can be checked by the command (ls -a).
 	In that hidden file named .git it stores the snapshot of all the histories (commits) made in the project.
-
 	I can check the commits made earlier by using the command git log. And to check the untracked files and history made by using the command (git 		status).
 
 - Why do I need to do it?
@@ -13,3 +12,35 @@
 What value do you think it offers?
 	
 	Staging area lies in the middle of the working directory and the repository. It lets the user add the one logical change at a time in the 		repository. You can add files in the staging area just by using the command (git add filename.txt). Status of the staging area can checked just 	by using the command (git status).
+
+-How can you use the staging area to make sure you have one commit per logical change?
+	
+	I can make sure that I have one commit per change by making sure to have only one change at a time in one file and adding and commiting the 		change afterwards. I can also make sure the changes made are not in the repository and stagging area by checking command (git diff) and to check 	 the stagging area with the repository one can use command (git diff --stagged).
+
+-What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	
+	In situations where we are experimenting with new features and are worried that it may ruine the functionality of the main branch.
+	It can be helpful in the situations where we are preparing for different language version of the main projct and further these branches can be 		mearged afterwards.
+
+-How do the diagrams help you visualize the branch structure?
+
+	Diagrams help in visualizing the commits and how you can trace back to the origin of the history/commit. It also helps in locating the isolated 	branch to which you can not reach, no matter what thus can start experimenting on things that matter the most.
+
+-What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	By merging two branches together we can make sure that a single master branch consist of all the features that the experimental branch had and 		all the  branches can be reached from that branch.
+	We represent that in the form of diagram because it make things easier to understand and clearly see how commits are being done.
+
+-What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Automatic merging pros:
+	-One doesnt have to waste time manually 
+
+	cons:
+	-We can resolve the conflicts as they arise.
+
+
+
+
+
+
+
